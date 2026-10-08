@@ -1,0 +1,29 @@
+<section id="demo" class="slide dark immersive-demo" data-layout="S08" data-layout-extension="immersive-video" aria-label="Scroll Dive immersive prototype demonstration">
+ <div class="canvas-card">
+  <div class="demo-grid">
+   <div class="video-column">
+    <div class="video-stage">
+     <div class="video-wrap">
+      <video id="prototype-video" src="ScrollDiveVideoDemo.mp4" poster="images/01-before-dive.jpg" preload="auto" muted playsinline aria-label="Scroll Dive prototype video"></video>
+      <button id="play-overlay" hidden type="button">Enter the dive <span aria-hidden="true">↗</span></button>
+     </div>
+    </div>
+    <span id="video-side-label" class="screen-reader-only">01 / PRE-DIVE</span>
+    <div class="screen-reader-only"><span id="play-status" role="status" aria-live="polite">Preparing video</span><span id="video-clock">00:00 / 00:48</span><div class="video-progress" role="progressbar" aria-label="Video progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="video-progress-fill"></span></div></div>
+   </div>
+   <div class="demo-copy" aria-live="polite" aria-atomic="true">
+    <span class="phase-meta" id="phase-label">01 / 04</span>
+    <h1 id="phase-title">Pre-dive state</h1>
+    <p id="phase-intro">A 3D scene in which a diver rests calmly at the water surface. The UI displays Total Underwater Time and Oxygen Remaining. The former indicates the user’s total SFV viewing time, while the latter represents the recommended maximum time for a single viewing session. The user can swipe down anytime to begin diving.</p>
+    <div class="screen-reader-only"><span id="detail-label">Before diving</span><p id="phase-detail">The diver rests at the surface before a bounded viewing session.</p></div>
+    <button id="continue-video" class="primary-action" type="button"><span id="continue-label">Continue</span><span aria-hidden="true">→</span></button>
+    <p id="presenter-cue" class="screen-reader-only"></p>
+   </div>
+  </div>
+  <div class="immersive-tools" aria-label="Demonstration controls">
+   <span class="immersive-wordmark">Scroll Dive<span>ICEC 2026 · WIP</span></span>
+   <div class="immersive-tool-actions"><button id="replay-video" type="button" title="Replay this phase (R)">Replay</button></div>
+  </div>
+  <nav class="phase-tabs" aria-label="Demonstration phases"><button type="button" data-phase="0" aria-current="step" aria-label="Replay Pre-dive state" title="Pre-dive state"><span>01</span></button><button type="button" data-phase="1" aria-label="Replay Diving &amp; viewing state" title="Diving &amp; viewing state"><span>02</span></button><button type="button" data-phase="2" aria-label="Replay Approaching maximum time cues" title="Approaching maximum time cues"><span>03</span></button><button type="button" data-phase="3" aria-label="Replay Ascent &amp; Return to the surface" title="Ascent &amp; Return to the surface"><span>04</span></button></nav>
+ </div>
+</section>
